@@ -136,10 +136,13 @@ button {
   color: #2e2f42;
 }
 
-.our-team-list {
+/* .our-team-list {
+  background-color: #ffffff;
+} */
+
+.our-team-item {
   background-color: #ffffff;
 }
-
 .our-team-name {
   font-weight: 500;
   font-size: 20px;
