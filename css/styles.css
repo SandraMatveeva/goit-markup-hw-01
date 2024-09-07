@@ -22,17 +22,18 @@ button {
 /* #endregion Common style */
 
 /* #region header */
-.page-logo-dark {
+.page-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #4d5ae5;
 }
 
-.first-part-logo {
-  color: #4d5ae5;
+.accent-dark-color {
+  color: #2e2f42;
 }
 
 .menu-link {
@@ -40,6 +41,7 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .menu-link:hover,
@@ -81,20 +83,24 @@ button {
 .main-title {
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
 }
 
 .btn-order {
-  background: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #fff;
+  background: #4d5ae5;
 }
 
 .btn-order:hover,
 .btn-order:focus {
-  background: #9747ff;
+  background-color: #404bbf;
 }
 
 /* #endregion hero */
@@ -123,20 +129,38 @@ button {
 .our-team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
 }
 
+.our-team-item {
+  .background-color: #ffffff;
+}
+
+.our-team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.our-team-profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
 /* #endregion Our Team */
 
 /* #region Our Portfolio */
 .our-portfolio-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -164,13 +188,17 @@ button {
   background: #2e2f42;
 }
 
-.page-logo-light {
+.page-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.accent-color {
   color: #f4f4fd;
 }
 
