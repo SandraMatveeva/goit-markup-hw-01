@@ -2,67 +2,86 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- #region header -->
-    <header>
-      <nav>
-        <a href="./index.html">WebStudio</a>
-        <ul>
-          <li><a href="">Studio</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+    <header class="page-header">
+      <nav class="page-nav">
+        <a class="page-logo-dark" href="./index.html">
+          <span class="first-part-logo">Web</span>Studio
+        </a>
+        <ul class="menu">
+          <li class="menu-item"><a class="menu-link" href="#">Studio</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Portfolio</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Contacts</a></li>
         </ul>
       </nav>
-
-      <address>
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      <address class="contacts">
+        <ul class="contact-list">
+          <li class="contact-list-item">
+            <a class="contact-list-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-list-item">
+            <a class="contact-list-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
         </ul>
       </address>
     </header>
     <!-- #endregion header -->
-
+     
     <!-- #region main -->
     <main>
       <!-- #region Hero -->
-      <section>
-        <h1>Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
+      <section class="main-page">
+        <h1 class="main-title">Effective Solutions for Your Business</h1>
+        <button class="btn-order" type="button">Order Service</button>
       </section>
       <!-- #endregion Hero -->
 
       <!-- #region Company dicription -->
-      <section>
+      <section class="dicription-company">
         <h2 hidden>Company dicription</h2>
         <ul>
           <li>
-            <h3>Strategy</h3>
-            <p>
+            <h3 class="dicription-title">Strategy</h3>
+            <p class="dicription-text">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
           <li>
-            <h3>Punctuality</h3>
-            <p>
+            <h3 class="dicription-title">Punctuality</h3>
+            <p class="dicription-text">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
           <li>
-            <h3>Diligence</h3>
-            <p>
+            <h3 class="dicription-title">Diligence</h3>
+            <p class="dicription-text">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
           <li>
-            <h3>Technologies</h3>
-            <p>
+            <h3 class="dicription-title">Technologies</h3>
+            <p class="dicription-text">
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
             </p>
@@ -72,47 +91,118 @@
       <!-- #endregion Company dicription -->
 
       <!-- #region Our Team -->
-      <section>
-        <h2>Our Team</h2>
-        <ul>
-          <li>
+      <section class="our-team-section">
+        <h2 class="our-team-title">Our Team</h2>
+        <ul class="our-team-list">
+          <li class="our-team-item">
             <img
+              class="our-team-foto"
               src="./images/img.jpg"
               alt="foto-product-designer"
               width="264"
             />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
-          </li>
+            <h3 class="our-team-name">Mark Guerrero</h3>
+            <p class="our-team-profession">Product Designer</p>
+          </li class="our-team-item">
           <li>
-            <img
+            <img class="our-team-foto"
               src="./images/img1.jpg"
               alt="foto-frontend-developer"
               width="264"
             />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
+            <h3 class="our-team-name">Tom Ford</h3>
+            <p class="our-team-profession">Frontend Developer</p>
           </li>
-          <li>
-            <img src="./images/img3.jpg" alt="foto-marketing" width="264" />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
+          <li class="our-team-item">
+            <img class="our-team-foto" 
+              src="./images/img3.jpg" 
+              alt="foto-marketing" 
+              width="264" />
+            <h3 class="our-team-name">Camila Garcia</h3>
+            <p class="our-team-profession">Marketing</p>
           </li>
-          <li>
-            <img src="./images/img4.jpg" alt="foto-ui-designer" width="264" />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
+          <li class="our-team-item">
+            <img class="our-team-foto" 
+              src="./images/img4.jpg" 
+              alt="foto-ui-designer" 
+              width="264" />
+            <h3 class="our-team-name">Daniel Wilson</h3>
+            <p class="our-team-profession">UI Designer</p>
           </li>
         </ul>
       </section>
       <!-- #endregion Our Team -->
+
+      <!-- #region Our Portfolio -->
+       <section>
+        <h2 class="our-portfolio-title" >Our Portfolio</h2>
+        <ul class="our-portfolio-list" >
+            <li class="our-portfolio-item" >
+                <img class="our-portfolio-foto"
+                  src="./images/Portfolio/Portfolio_foto1.png" 
+                  alt="Banking App" 
+                  width="360" 
+                  height="300">
+                <h3  class="our-portfolio-name"  >Banking App</h3>
+                <p class="our-portfolio-discription" >App</p>
+            </li>
+            <li class="our-portfolio-item">
+                <img class="our-portfolio-foto" 
+                  src="./images/Portfolio/Cashless Payment_2.png" 
+                  alt="Cashless Payment" 
+                  width="360" 
+                  height="300">
+                <h3 class="our-portfolio-name" >Cashless Payment</h3>
+                <p class="our-portfolio-discription" >Marketing</p>
+            </li>
+            <li class="our-portfolio-item">
+                <img class="our-portfolio-foto" 
+                  src="./images/Portfolio/Meditation App_3.png" 
+                  alt="Meditation App" 
+                  width="360" 
+                  height="300">
+                <h3 class="our-portfolio-name" >Meditation App</h3>
+                <p class="our-portfolio-discription" >App</p>
+            </li>
+            <li class="our-portfolio-item">
+                <img class="our-portfolio-foto" 
+                  src="./images/Portfolio/Taxi Service_4.png" 
+                  alt="Taxi Service" 
+                  width="360" 
+                  height="300">
+                <h3 class="our-portfolio-name" >Taxi Service</h3>
+                <p class="our-portfolio-discription" >Marketing</p>
+            </li>
+            <li class="our-portfolio-item">
+                <img class="our-portfolio-foto" 
+                  src="./images/Portfolio/Screen Illustrations_5.png" 
+                  alt="Screen Illustrations" 
+                  width="360" 
+                  height="300">
+                <h3 class="our-portfolio-name" >Screen Illustrations</h3>
+                <p class="our-portfolio-discription" >Design</p>
+            </li>
+            <li class="our-portfolio-item">
+                <img class="our-portfolio-foto" 
+                  src="./images/Portfolio/Online Courses_6.png" 
+                  alt="Online Courses" 
+                  width="360" 
+                  height="300">
+                <h3 class="our-portfolio-name" >Online Courses</h3>
+                <p class="our-portfolio-discription" >Marketing</p>
+            </li>
+        </ul>
+       </section>
+      <!-- #endregion Our Portfolio -->
     </main>
     <!-- #endregion main -->
 
     <!-- #region footer -->
-    <footer>
-      <a href="./index.html">WebStudio</a>
-      <p>
+    <footer class="page-footer" >
+      <a class="page-logo-light" href="./index.html">
+          <span class="first-part-logo">Web</span>Studio
+        </a>
+      <p class="footer-text" >
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
