@@ -116,7 +116,7 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  column-gap: 40px;
+  gap: 40px;
 }
 .menu-link {
   display: block;
@@ -151,7 +151,7 @@ body {
 
 .contact-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 .contact-list-link {
   font-weight: 400;
@@ -170,11 +170,12 @@ body {
 
 .main-page {
   background: #2e2f42;
+  padding: 188px 0;
 }
-.title-block-wr {
+/* .title-block-wr {
   padding-top: 188px;
   padding-bottom: 188px;
-}
+} */
 
 .main-title {
   font-weight: 700;
@@ -201,6 +202,7 @@ body {
   border: 0;
   margin: 0 auto;
   padding: 16px 32px;
+  min-width: 169px;
 }
 
 .btn-order:hover,
@@ -215,11 +217,11 @@ body {
 .dicription-list {
   padding-top: 60px;
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .discription-item {
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .dicription-title {
@@ -228,7 +230,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .dicription-text {
@@ -236,6 +238,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 /* #endregion Company dicription */
 
@@ -246,16 +249,15 @@ body {
 
 .our-team-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .our-team-item {
   background-color: #ffffff;
   width: calc((100%-72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-foto {
-}
 .our-team-name {
   font-weight: 500;
   font-size: 20px;
@@ -276,11 +278,13 @@ body {
 /* #endregion Our Team */
 
 /* #region Our Portfolio */
-.our-portfolio-foto {
+.title-paragraf-portfolio {
+  padding: 32px 16px;
 }
 
 .border-portfolio {
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .our-portfolio-list {
   display: flex;
@@ -289,7 +293,7 @@ body {
 }
 
 .our-portfolio-item {
-  width: calc((100%-48) / 3);
+  width: calc((100% - 48px) / 3);
   background: #ffffff;
 }
 .our-portfolio-name {
@@ -315,20 +319,21 @@ body {
 
 /* #region Footer */
 .page-footer {
-  display: flex;
   background: #2e2f42;
+  padding: 100px 0;
 }
 
-.w-100 {
+/* .w-100 {
   width: 100%;
 }
 .footer-content-wr {
   padding-top: 100px;
   padding-bottom: 100px;
   width: 100%;
-}
+} */
 
-.page-logo {
+.page-logo-footer {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -336,6 +341,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-bottom: 16px;
 }
 
 .accent-color {
@@ -349,7 +355,6 @@ body {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  margin-top: 16px;
 }
 
 /* #endregion Footer */
