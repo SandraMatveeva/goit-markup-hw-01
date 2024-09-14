@@ -184,10 +184,8 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  padding-bottom: 48px;
   max-width: 496px;
-  margin-bottom: 48px;
-  margin: 0 auto;
+  margin: 0 auto 48px;
 }
 
 .btn-order {
@@ -215,7 +213,6 @@ body {
 /* #region Company dicription */
 
 .dicription-list {
-  padding-top: 60px;
   display: flex;
   gap: 24px;
 }
@@ -304,7 +301,6 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  margin-left: 16px;
 }
 
 .our-portfolio-discription {
@@ -312,7 +308,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-left: 16px;
 }
 
 /* #endregion Our Portfolio */
