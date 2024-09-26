@@ -505,13 +505,10 @@ body {
   display: flex;
   align-items: flex-end;
   max-width: 453px;
+  gap: 24px;
 }
 
-.form-subscribe {
-  margin-right: 24px;
-}
-
-.form-footer-label {
+.form-footer-text {
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
@@ -524,11 +521,11 @@ body {
 }
 
 .form-footer-input {
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 4px;
-  width: 100%;
+  width: 264px;
   height: 40px;
-  background-color: unset;
+  background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding-left: 16px;
 }
@@ -543,13 +540,14 @@ body {
 }
 
 .btn-footer {
-  display: inline-flex;
+  display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
+  border: none;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: #4d5ae5;
   font-family: "Roboto", sans-serif;
@@ -623,7 +621,7 @@ body {
 }
 
 .form-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .form-label {
@@ -659,6 +657,7 @@ body {
 .form-input:focus {
   outline: none;
   border: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
 }
 
 .input-icon {
@@ -671,6 +670,7 @@ body {
 }
 
 .form-input:focus + .input-icon {
+  fill: #4d5ae5;
   fill: #4d5ae5;
 }
 
@@ -703,6 +703,7 @@ body {
 .form-input-area:focus {
   outline: none;
   border: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
 }
 
 .form-checkbox {
@@ -764,6 +765,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -777,8 +779,9 @@ body {
 
 .form-button-close:hover,
 .form-button-close:focus {
+  fill: #ffffff;
   background-color: #404bbf;
-  fill: #fff;
+  border: none;
 }
 
 .form-text {
