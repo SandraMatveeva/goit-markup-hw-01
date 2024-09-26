@@ -480,8 +480,125 @@
             </li>
           </ul>
         </div>
+
+        <form class="form-footer">
+          <div class="form-subscribe">
+            <label class="form-footer-label" for="useremail">Subscribe</label>
+            <input
+              class="form-footer-input"
+              id="username"
+              type="email"
+              name="useremail"
+              placeholder="E-mail"
+            />
+          </div>
+
+          <button class="btn-footer" type="submit">
+            <svg class="subscribe-svg" width="24" height="20">
+              <use href="./images/icons.svg#icon-subscribe" />
+            </svg>
+            Subscribe
+          </button>
+        </form>
       </div>
     </footer>
     <!-- #endregion footer -->
+
+    <!-- #region modal -->
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="form-button-close" type="button">
+          <svg class="button-close-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-close" />
+          </svg>
+        </button>
+        <p class="form-text">Leave your contacts and we will call you back</p>
+
+        <form class="form-modal">
+          <div class="form-wrapper">
+            <label class="form-label" for="username"> Name</label>
+            <div class="form-icon-input-wraper">
+              <input
+                class="form-input"
+                id="username"
+                type="text"
+                name="username"
+                autofocus
+                required
+              />
+              <svg class="input-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-person" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <label class="form-label" for="userphone"> Phone</label>
+            <div class="form-icon-input-wraper">
+              <input
+                class="form-input"
+                id="userphone"
+                type="tel"
+                name="phone"
+                required
+              />
+              <svg class="input-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <label class="form-label" for="useremail"> Email</label>
+            <div class="form-icon-input-wraper">
+              <input
+                class="form-input"
+                id="useremail"
+                type="email"
+                name="email"
+                required
+              />
+              <svg class="input-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-mail" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <label class="form-label" for="usercomment"> Comment </label>
+            <textarea
+              class="form-input-area"
+              id="usercomment"
+              name="comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="form-checkbox">
+            <input
+              class="rewiew-form-checkbox visually-hidden"
+              id="checkbox-privacy-policy"
+              type="checkbox"
+              name="privacy-policy"
+              value="true"
+              required
+            />
+            <label class="checkbox-label" for="checkbox-privacy-policy">
+              <span class="form-custom-checkbox">
+                <svg class="chek-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-chek" />
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy-policy-link accent-color" href=""
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+          <button class="btn-order" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- #endregion modal -->
   </body>
 </html>
