@@ -51,6 +51,80 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-icon" />
+            <!-- не отображаеться кнопка иконка -->
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="conteiner mobile-menu-conteiner">
+          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <nav class="mobile-menu-nav">
+            Navig
+            <!-- <ul class="mobile-menu">
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a class="mobile-menu-link" href="">Contacts</a>
+              </li>
+            </ul> -->
+          </nav>
+          <address class="mobile-contacts">
+            <ul class="mobile-contact-list">
+              <li class="mobile-contact-list-item">
+                <a
+                  class="mobile-contact-list-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-contact-list-item">
+                <a class="mobile-contact-list-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-social-media-list">
+            <li class="mobile-social-media-item">
+              <a class="mobile-social-media-link" href="#">
+                <svg class="mobile-social-svg" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram2" />
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-media-item">
+              <a class="mobile-social-media-link" href="#">
+                <svg class="mobile-social-svg" width="16" height="16">
+                  <use href="./images/icons.svg#icon-Twitter" />
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-mobile-social-media-item">
+              <a class="mobile-social-media-link" href="#">
+                <svg class="mobile-social-svg" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-mobile-social-media-item">
+              <a class="mobile-social-media-link" href="#"
+                ><svg class="mobile-social-svg" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- #endregion header -->
@@ -61,7 +135,9 @@
       <section class="main-page">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="btn-order" type="button">Order Service</button>
+          <button class="btn-order" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- #endregion Hero -->
@@ -435,7 +511,7 @@
     <!-- #endregion main -->
 
     <!-- #region footer -->
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container container-w">
         <div class="footer-content-wr">
           <a class="page-logo-footer" href="./index.html"
@@ -507,9 +583,9 @@
     <!-- #endregion footer -->
 
     <!-- #region modal -->
-    <div class="backdrop is-open">
-      <div class="modal">
-        <button class="form-button-close" type="button">
+    <div class="backdrop hidden" data-modal>
+      <div class="modal hidden">
+        <button class="form-button-close" type="button" data-modal-close>
           <svg class="button-close-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close" />
           </svg>
@@ -602,5 +678,7 @@
       </div>
     </div>
     <!-- #endregion modal -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
