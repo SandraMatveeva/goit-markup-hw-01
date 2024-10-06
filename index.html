@@ -54,17 +54,19 @@
         <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger-icon" />
-            <!-- не отображаеться кнопка иконка -->
           </svg>
         </button>
       </div>
 
       <div class="mobile-menu" data-menu>
         <div class="conteiner mobile-menu-conteiner">
-          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <button class="form-button-close" data-menu-close>
+            <svg class="button-close-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1" />
+            </svg>
+          </button>
           <nav class="mobile-menu-nav">
-            Navig
-            <!-- <ul class="mobile-menu">
+            <ul class="mobile-menu-list">
               <li class="mobile-menu-item">
                 <a class="mobile-menu-link current" href="./index.html"
                   >Studio</a
@@ -76,7 +78,7 @@
               <li class="mobile-menu-item">
                 <a class="mobile-menu-link" href="">Contacts</a>
               </li>
-            </ul> -->
+            </ul>
           </nav>
           <address class="mobile-contacts">
             <ul class="mobile-contact-list">
@@ -95,30 +97,30 @@
             </ul>
           </address>
           <ul class="mobile-social-media-list">
-            <li class="mobile-social-media-item">
-              <a class="mobile-social-media-link" href="#">
-                <svg class="mobile-social-svg" width="16" height="16">
+            <li class="social-media-item">
+              <a class="social-media-link" href="#">
+                <svg class="social-svg" width="16" height="16">
                   <use href="./images/icons.svg#icon-instagram2" />
                 </svg>
               </a>
             </li>
-            <li class="mobile-social-media-item">
-              <a class="mobile-social-media-link" href="#">
-                <svg class="mobile-social-svg" width="16" height="16">
+            <li class="social-media-item">
+              <a class="social-media-link" href="#">
+                <svg class="social-svg" width="16" height="16">
                   <use href="./images/icons.svg#icon-Twitter" />
                 </svg>
               </a>
             </li>
-            <li class="mobile-mobile-social-media-item">
-              <a class="mobile-social-media-link" href="#">
-                <svg class="mobile-social-svg" width="16" height="16">
+            <li class="social-media-item">
+              <a class="social-media-link" href="#">
+                <svg class="social-svg" width="16" height="16">
                   <use href="./images/icons.svg#icon-facebook" />
                 </svg>
               </a>
             </li>
-            <li class="mobile-mobile-social-media-item">
-              <a class="mobile-social-media-link" href="#"
-                ><svg class="mobile-social-svg" width="16" height="16">
+            <li class="social-media-item">
+              <a class="social-media-link" href="#"
+                ><svg class="social-svg" width="16" height="16">
                   <use href="./images/icons.svg#icon-linkedin" />
                 </svg>
               </a>
@@ -208,9 +210,9 @@
             <li class="our-team-item">
               <img
                 class="our-team-foto"
+                srcset="./images/img-2x.jpg 2x"
                 src="./images/img.jpg"
                 alt="foto-product-designer"
-                width="264"
               />
               <div class="title-paragraf">
                 <h3 class="our-team-name">Mark Guerrero</h3>
@@ -251,8 +253,8 @@
               <img
                 class="our-team-foto"
                 src="./images/img1.jpg"
+                srcset="./images/img1-2x.jpg 2x"
                 alt="foto-frontend-developer"
-                width="264"
               />
               <div class="title-paragraf">
                 <h3 class="our-team-name">Tom Ford</h3>
@@ -293,8 +295,8 @@
               <img
                 class="our-team-foto"
                 src="./images/img3.jpg"
+                srcset="./images/img3-2x.jpg"
                 alt="foto-marketing"
-                width="264"
               />
               <div class="title-paragraf">
                 <h3 class="our-team-name">Camila Garcia</h3>
@@ -335,8 +337,8 @@
               <img
                 class="our-team-foto"
                 src="./images/img4.jpg"
+                srcset="./images/img4-2x.jpg 2x"
                 alt="foto-ui-designer"
-                width="264"
               />
               <div class="title-paragraf">
                 <h3 class="our-team-name">Daniel Wilson</h3>
@@ -388,6 +390,7 @@
                 <img
                   class="our-portfolio-foto"
                   src="./images/Portfolio/Banking-App-1.jpg"
+                  srcset="./images/Portfolio/Banking-App-1-2x.jpg 2x"
                   alt="Banking App"
                   width="360"
                 />
@@ -408,6 +411,7 @@
                 <img
                   class="our-portfolio-foto"
                   src="./images/Portfolio/Cashless-Payment-2.jpg"
+                  srcset="./images/Portfolio/Cashless-Payment-2x.jpg 2x"
                   alt="Cashless Payment"
                   width="360"
                 />
@@ -428,6 +432,7 @@
                 <img
                   class="our-portfolio-foto"
                   src="./images/Portfolio/Meditation-App-3.jpg"
+                  srcset="./images/Portfolio/Meditation-App-2x.jpg 2x"
                   alt="Meditation App"
                   width="360"
                 />
@@ -448,6 +453,7 @@
                 <img
                   class="our-portfolio-foto"
                   src="./images/Portfolio/Taxi-Service-4.jpg"
+                  srcset="./images/Portfolio/Taxi-Service-4-2x.jpg 2x"
                   alt="Taxi Service"
                   width="360"
                 />
@@ -468,6 +474,7 @@
                 <img
                   class="our-portfolio-foto"
                   src="./images/Portfolio/Screen-Illustrations-5.jpg"
+                  srcset="./images/Portfolio/Screen-Illustrations-2x.jpg 2x"
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -488,6 +495,7 @@
                 <img
                   class="our-portfolio-foto"
                   src="./images/Portfolio/Online-Courses-6.jpg"
+                  srcset="./images/Portfolio/Online-Courses-2x.jpg 2x"
                   alt="Online Courses"
                   width="360"
                 />
@@ -511,7 +519,7 @@
     <!-- #endregion main -->
 
     <!-- #region footer -->
-    <footer class="page-footer hidden">
+    <footer class="page-footer">
       <div class="container container-w">
         <div class="footer-content-wr">
           <a class="page-logo-footer" href="./index.html"
@@ -583,11 +591,11 @@
     <!-- #endregion footer -->
 
     <!-- #region modal -->
-    <div class="backdrop hidden" data-modal>
-      <div class="modal hidden">
+    <div class="backdrop" data-modal>
+      <div class="modal">
         <button class="form-button-close" type="button" data-modal-close>
           <svg class="button-close-svg" width="8" height="8">
-            <use href="./images/icons.svg#icon-close" />
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1" />
           </svg>
         </button>
         <p class="form-text">Leave your contacts and we will call you back</p>
@@ -621,7 +629,7 @@
                 required
               />
               <svg class="input-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-phone" />
+                <use href="./images/icons.svg#icon-Vector" />
               </svg>
             </div>
           </div>
@@ -667,10 +675,12 @@
                   <use href="./images/icons.svg#icon-chek" />
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="privacy-policy-link accent-color" href=""
-                >Privacy Policy</a
-              >
+              <span class="form-custom-checkbox-text">
+                I accept the terms and conditions of the
+                <a class="privacy-policy-link accent-color" href=""
+                  >Privacy Policy</a
+                >
+              </span>
             </label>
           </div>
           <button class="btn-order" type="submit">Send</button>
