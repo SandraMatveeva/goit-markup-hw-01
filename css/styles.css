@@ -294,8 +294,8 @@ body {
 
 .mobile-menu-link:hover,
 .mobile-menu-link:focus,
-.menu-link.current {
-  color: #404bbf;
+.mobile-menu-link.current {
+  color: #4d5ae5;
 }
 
 .form-button-close {
@@ -351,19 +351,23 @@ body {
 }
 
 .mobile-contact-list-link:hover,
-.mobile-contact-list-link:focus {
+.mobile-contact-list-link:focus,
+.mobile-contact-list-link.current {
   color: #404bbf;
 }
 
 .mobile-social-media-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  gap: 40px;
 }
 
 .mobile-menu-item {
   margin-bottom: 40px;
+}
+
+.mobile-menu-item:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -375,18 +379,28 @@ body {
 
 /* #region Hero */
 .main-page {
-  min-width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   background: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/hero-page.jpg");
+    url("../images/Dark-bg.jpg");
   padding: 72px 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and(max-width:767) and (min-resolution: 192dpi) {
+  .main-page {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/Dark-bg@2x.jpg");
+  }
 }
 
 .main-title {
@@ -424,10 +438,25 @@ body {
 
 @media screen and (min-width: 768px) {
   .main-page {
-    min-width: 768px;
+    max-width: 768px;
     padding: 112px 0;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/Tablet_Dark-bg.jpg");
   }
 
+  @media screen and(min-width:768) and (min-resolution: 192dpi) {
+    .main-page {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/Tablet-Dark-bg@2x.jpg");
+    }
+  }
   .main-title {
     font-size: 56px;
     line-height: 1.07;
@@ -439,9 +468,25 @@ body {
 
 @media screen and (min-width: 1158px) {
   .main-page {
-    min-width: 1158px;
+    max-width: 1440px;
     padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-page.jpg");
   }
+
+  @media screen and(min-width:1158) and (min-resolution: 192dpi) {
+    .main-page {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-page-2x.jpg");
+    }
+  }
+
   .main-title {
     margin: 0 auto 48px;
   }
@@ -566,7 +611,7 @@ body {
 
 .our-team-item {
   background-color: #ffffff;
-  min-width: 264px;
+  max-width: 264px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -746,7 +791,7 @@ body {
 @media screen and (min-width: 768px) {
   .our-team-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 72px 24px;
   }
 
@@ -758,6 +803,10 @@ body {
 @media screen and (min-width: 1158px) {
   .our-portfolio-item {
     width: calc((100% - 48px) / 3);
+  }
+
+  .our-portfolio-item {
+    box-shadow: none;
   }
 }
 
@@ -887,6 +936,7 @@ body {
     text-align: left;
     justify-content: flex-start;
     gap: 72px 24px;
+    padding: 0 108px;
   }
 
   .footer-text.right {
@@ -929,6 +979,15 @@ body {
     max-width: 453px;
     gap: 24px;
   }
+
+  .footer-text {
+    max-width: 264px;
+  }
+
+  .container-w {
+    gap: 0px;
+    padding: 0;
+  }
 }
 /* #endregion Footer */
 
@@ -959,7 +1018,7 @@ body {
   top: 50%;
   left: 50%;
   padding: 72px 16px 16px;
-  width: 288px;
+  max-width: 288px;
   min-height: 623px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -1081,6 +1140,10 @@ body {
   fill: #4d5ae5;
 }
 
+.form-input:focus {
+  fill: #4d5ae5;
+}
+
 .form-icon-input-wraper {
   position: relative;
 }
@@ -1167,7 +1230,7 @@ body {
 }
 .modal {
   padding: 72px 24px 24px;
-  width: 408px;
+  max-width: 408px;
   min-height: 584px;
 }
 /* #endregion Modal */
